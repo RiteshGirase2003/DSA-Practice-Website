@@ -1,0 +1,7 @@
+#00abe1 - blue ( )
+#161f6d - persian blue ( title , )
+#0d9edf 
+#259b9a
+#20297b - light persian blue ( despcription)
+#7f7f7f - light brown black ( footer )
+#e3f8ff - light blue ( card, table chip)

@@ -1,0 +1,135 @@
+/* index.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full height */
+    scrollbar-width: none;
+
+}
+
+/* Header */
+header {
+    background-color: #00abe1;
+    color: #161f6d;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allows the main section to grow and fill space */
+}
+
+main h2 {
+    color: #161f6d;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #7f7f7f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Allow footer to sit at the bottom */
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+/* Card Container */
+#cardContainer {
+    display: flex;                  /* Use flexbox for layout */
+    flex-wrap: wrap;               /* Allow wrapping of cards */
+    justify-content: center;        /* Center the cards */
+    padding: 20px;                 /* Padding around the container */
+    gap: 20px;                     /* Space between cards */
+}
+
+/* Card Styles */
+.card {
+    background-color: #e3f8ff;        /* Card background color */
+    border-radius: 10px;           /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden;              /* Hide overflow */
+    transition: transform 0.2s;    /* Smooth transform */
+    text-decoration: none;          /* Remove underline from links */
+    width: 250px;                  /* Fixed width for cards */
+    display: flex;                 /* Flexbox for card contents */
+    flex-direction: column;        /* Stack contents vertically */
+    align-items: center;           /* Center contents */
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;                   /* Full width */
+    height: 150px;                 /* Fixed height for uniformity */
+    object-fit: cover;              /* Maintain aspect ratio */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.25rem;            /* Font size for the title */
+    margin: 10px 0;                /* Margin around title */
+    color: #161f6d;                   /* Title color */
+}
+
+/* Card Description */
+.card-description {
+    font-size: 1rem;               /* Font size for the description */
+    color: #20297b;                   /* Description color */
+    text-align: center;            /* Center text */
+    padding: 0 15px;               /* Horizontal padding */
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px);   /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #cardContainer {
+        flex-direction: column;    /* Stack cards vertically on smaller screens */
+        align-items: center;       /* Center cards */
+    }
+
+    .card {
+        width: 90%;                /* Full width on small screens */
+    }
+}

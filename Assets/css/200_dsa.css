@@ -1,0 +1,177 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full height */
+}
+
+/* Header */
+header {
+    background-color: #00abe1;
+    color: #161f6d;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* main */
+main {
+    color:#161f6d;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allows the main section to grow and fill space */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #7f7f7f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Allow footer to sit at the bottom */
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+
+/* Table Styles */
+table {
+    border-collapse: collapse; /* Removes gaps between borders */
+    margin: 20px 0; /* Adds some space above and below the table */
+}
+
+th, td {
+    padding: 12px 15px; /* Adds padding inside table cells */
+    text-align: left; /* Aligns text to the left */
+}
+
+th {
+    background-color: #00abe1; /* Header background color */
+    color: white; /* Header text color */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for even rows */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Hover effect for table rows */
+}
+
+/* Chip Styles */
+.chip {
+    display: inline-block; /* Ensures chips are inline */
+    background: #e3f8ff;
+    color: #20297b; /* Chip text color */
+    border: 2px solid #161f6d;
+    border-radius: 16px; /* Rounded corners for chips */
+    padding: 5px 10px; /* Padding for chips */
+    margin: 2px; /* Space between chips */
+    font-size: 0.8rem; /* Font size for chip text */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: #007bff; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* For tablets */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0; /* Add space between items */
+    }
+
+    .chip {
+        font-size: 1rem; /* Increase font size for chips */
+    }
+
+    main {
+        padding: 15px; /* Reduce padding in main section */
+    }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0; /* Reduce header padding */
+    }
+
+    table th, table td {
+        padding: 10px 8px; /* Reduce padding in table cells */
+    }
+
+    .chip {
+        padding: 4px 8px; /* Reduce padding for chips */
+        font-size: 0.9rem; /* Slightly increase font size for chips */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding in main section */
+    }
+}
+
+/* For mini display phones */
+@media (max-width: 320px) {
+    nav ul li {
+        margin: 5px 0; /* Further reduce space between navigation items */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for header */
+    }
+
+    .chip {
+        font-size: 0.8rem; /* Adjust chip font size */
+    }
+
+    table {
+        font-size: 0.8rem; /* Reduce font size for table */
+    }
+
+    main {
+        padding: 5px; /* Minimize padding in main section */
+    }
+}

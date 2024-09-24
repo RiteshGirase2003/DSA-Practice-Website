@@ -1,0 +1,34 @@
+{
+    "content": [
+        {
+            "title": "200 DSA Questions",
+            "description": "Easy to medium DSA questions for practice.",
+            "filename": "200_dsa.json",
+            "img": "../Assets/images/200_dsa.jpeg"
+        },
+        {
+            "title": "DSA Practice Questions",
+            "description": "Topic-wise questions to sharpen your skills.",
+            "filename": "DSA.json",
+            "img": "../Assets/images/img.jpeg"
+        },
+        {
+            "title": "10 Days DSA Plan",
+            "description": "Master 10 DSA topics in just 10 days.",
+            "filename": "Daily.json",
+            "img": "../Assets/images/img.jpeg"
+        },
+        {
+            "title": "Experience",
+            "description": "Real interview experiences shared by candidates.",
+            "filename": "Interview_experience.json",
+            "img": "../Assets/images/img.jpeg"
+        },
+        {
+            "title": "Tips",
+            "description": "Expert tips to enhance your DSA preparation.",
+            "filename": "Tips_by_experts.json",
+            "img": "../Assets/images/img.jpeg"
+        }
+    ]
+}
